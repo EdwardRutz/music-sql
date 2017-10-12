@@ -1,7 +1,7 @@
 # Introduction to SQL with Music History
 
-Exercise, Nashville Software School
-
+Back-End Exercise, Nashville Software School
+10-12-17
 
 ## Downloading the Database Files
 
@@ -15,7 +15,7 @@ Download the [musichistory.db](./assets/musichistory.db) file, and then copy it 
 
 For each of the following exercises, provide the appropriate query. Yes, even the ones that are expressed in the form of questions. Everything from class and the [Sqlite](http://www.sqlite.org/) documentation for SQL [keywords](https://www.sqlite.org/lang.html) and [functions](https://www.sqlite.org/lang_corefunc.html) is fair game.
 
-- [ ] Query all of the entries in the `Genre` table
+- [X] Query all of the entries in the `Genre` table
     ``` SELECT * FROM genre; ``` 
 
 - [ ] Using the `INSERT` statement, add one of your favorite artists to the `Artist` table.
