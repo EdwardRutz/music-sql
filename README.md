@@ -16,6 +16,7 @@ Download the [musichistory.db](./assets/musichistory.db) file, and then copy it 
 For each of the following exercises, provide the appropriate query. Yes, even the ones that are expressed in the form of questions. Everything from class and the [Sqlite](http://www.sqlite.org/) documentation for SQL [keywords](https://www.sqlite.org/lang.html) and [functions](https://www.sqlite.org/lang_corefunc.html) is fair game.
 
 - [X] Query all of the entries in the `Genre` table
+
     ``` SELECT * FROM genre; ``` 
 
 - [ ] Using the `INSERT` statement, add one of your favorite artists to the `Artist` table.
