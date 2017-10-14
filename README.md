@@ -19,9 +19,23 @@ For each of the following exercises, provide the appropriate query. Yes, even th
 
     ``` SELECT * FROM genre; ``` 
 
-- [ ] Using the `INSERT` statement, add one of your favorite artists to the `Artist` table.
-- [ ] Using the `INSERT` statement, add one, or more, albums by your artist to the `Album` table.
-- [ ] Using the `INSERT` statement, add some songs that are on that album to the `Song` table.
+- [X] Using the `INSERT` statement, add one of your favorite artists to the `Artist` table.
+
+    ``` INSERT INTO Artist VALUES (null, "Imagine Dragons", 2017); ```
+
+- [X] Using the `INSERT` statement, add one, or more, albums by your artist to the `Album` table.
+    ```  INSERT INTO Album VALUES (null, "Big House", '1/13/2017', 2083, 'Parque', 28, 2); ```
+
+- [X] Using the `INSERT` statement, add some songs that are on that album to the `Song` table.
+
+    ``` INSERT INTO song (Title, GenreId, ArtistId, AlbumId) VALUES ("Happy Day", 2, 28, 25);
+        INSERT INTO song (Title, GenreId, ArtistId, AlbumId) VALUES ("Big Day", 2, 28, 25);
+        INSERT INTO song (Title, GenreId, ArtistId, AlbumId) VALUES ("Super Big Day", 2, 28, 25);
+        INSERT INTO song (Title, GenreId, ArtistId, AlbumId) VALUES ("Happy, Super Big Day", 2, 28, 25);
+    ```
+     - Note: To insert select columns rather than including data for all columns, changed the schema table fields to accept null values. Only the primary/foreign keys accept not null.
+     
+
 - [ ] Write a `SELECT` query that provides the song titles, album title, and artist name for all of the data you just entered in. Use the [`LEFT JOIN`](https://www.tutorialspoint.com/sql/sql-using-joins.htm) keyword sequence to connect the tables, and the `WHERE` keyword to filter the results to the album and artist you added.
     > **Reminder:** Direction of join matters. Try the following statements and see the difference in results.
 
@@ -35,3 +49,10 @@ For each of the following exercises, provide the appropriate query. Yes, even th
 - [ ] Using `MAX()` function, write a select statement to find the album with the longest duration. The result should display the album title and the duration.
 - [ ] Using `MAX()` function, write a select statement to find the song with the longest duration. The result should display the song title and the duration.
 - [ ] Modify the previous query to also display the title of the album.
+
+
+
+## References
+
+
+
